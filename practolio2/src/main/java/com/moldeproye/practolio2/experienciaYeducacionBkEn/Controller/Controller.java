@@ -1,7 +1,6 @@
 package com.moldeproye.practolio2.experienciaYeducacionBkEn.Controller;
 import com.moldeproye.practolio2.experienciaYeducacionBkEn.model.Educacion;
 import com.moldeproye.practolio2.experienciaYeducacionBkEn.service.IEducacionService;
-import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -23,7 +22,7 @@ public class Controller {
       educaServ.crearEducacion(educ);
     }
    
-    @GetMapping ("/ver/Educaciones")
+    @GetMapping ("/ver/educaciones")
     @ResponseBody
     public List<Educacion> verEducaciones () {
        return educaServ.verEducaciones();
